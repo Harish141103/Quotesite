@@ -42,43 +42,43 @@ function rotateFunction(){
   const emotions = [
       {
       name: 'Anger',
-      image: '/img/emotion img/angry.jpg',
-      quoteUrl: '/emotions/anger.htm',
+      image: 'https://harish141103.github.io/Quotesite/img/emotion img/angry.jpg',
+      quoteUrl: 'https://harish141103.github.io/Quotesite/emotions/anger.htm',
       },
       {
       name: 'Fear',
-      image: '/img/emotion img/fear.jpg',
-      quoteUrl: '/emotions/fear.htm',
+      image: 'https://harish141103.github.io/Quotesite/img/emotion img/fear.jpg',
+      quoteUrl: 'https://harish141103.github.io/Quotesite/emotions/fear.htm',
       },
       {
       name: 'Happiness',
-      image: '/img/emotion img/happy.jpg',
-      quoteUrl: '/emotions/happiness.htm',
+      image: 'https://harish141103.github.io/Quotesite/img/emotion img/happy.jpg',
+      quoteUrl: 'https://harish141103.github.io/Quotesite/emotions/happiness.htm',
       },
       {
       name: 'Shame',
-      image: '/img/emotion img/shame.jpg',
-      quoteUrl: '/emotions/shame.htm',
+      image: 'https://harish141103.github.io/Quotesite/img/emotion img/shame.jpg',
+      quoteUrl: 'https://harish141103.github.io/Quotesite/emotions/shame.htm',
       },
       {
       name: 'Love',
-      image: '/img/emotion img/love.jpg',
-      quoteUrl: '/emotions/love.htm',
+      image: 'https://harish141103.github.io/Quotesite/img/emotion img/love.jpg',
+      quoteUrl: 'https://harish141103.github.io/Quotesite/emotions/love.htm',
       },
       {
       name: 'Sadness',
-      image: '/img/emotion img/sad.jpg',
-      quoteUrl: '/emotions/sadness.htm',
+      image: 'https://harish141103.github.io/Quotesite/img/emotion img/sad.jpg',
+      quoteUrl: 'https://harish141103.github.io/Quotesite/emotions/sadness.htm',
       },
       {
       name: 'Anxiety',
-      image: '/img/emotion img/anxious.png',
-      quoteUrl: '/emotions/anxiety.htm',
+      image: 'https://harish141103.github.io/Quotesite/img/emotion img/anxious.png',
+      quoteUrl: 'https://harish141103.github.io/Quotesite/emotions/anxiety.htm',
       },
       {
       name: 'Envy',
-      image: '/img/emotion img/envy.jpg',
-      quoteUrl: '/emotions/envy.htm',
+      image: 'https://harish141103.github.io/Quotesite/img/emotion img/envy.jpg',
+      quoteUrl: 'https://harish141103.github.io/Quotesite/emotions/envy.htm',
       },
       ];
       
