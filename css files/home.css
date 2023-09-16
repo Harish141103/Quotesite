@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root{
+  --red:rgb(249, 7, 22);
+  --orange:rgb(255, 84, 3);
+  --gold:rgb(255, 202, 3);
+  --yellow:rgb(255, 243, 35);
+  --purple:rgb(141, 16, 141);
+}
+
+header{
+  max-width:100vw;
+  max-height:25vh;
+  background: linear-gradient(to right,var(--purple),var(--gold),var(--purple));
+  /* background-color:var(--red); */
+}
+.header{
+  display:flex;
+justify-content: center;
+flex-direction: column;
+}
+.logo{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color:black;
+  margin-bottom: .5em;
+}
+.logo img{margin:.3em;}
+.hright{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: .8em;
+  font-weight: bolder;
+  color:whitesmoke;
+margin-bottom: .5em;
+flex-wrap:wrap;
+}
+.hright h1{
+  flex:3;
+  padding-left: .4em;
+max-height: 90vw;
+}
+.hright a{
+  flex:1;
+  display:flex;
+  justify-content: flex-end;
+padding-right:.5em;
+text-decoration: none;
+}
+#logout{
+  padding: .2em .5em;
+  border:none;
+  background-color:#0069d9;
+  color: #fff;
+  /* cursor: pointer; */
+  border-radius: 0.30rem;
+  font-size: 1.2em;
+  font-weight: bold;
+    }
+
+    /* Style for the navigation bar */
+  nav {
+    background: linear-gradient(to left,var(--purple),var(--gold));
+    /* background-color:gold; */
+    padding: 10px;
+  }
+    /* chat animated menu icon */
+   .menu-icon{ 
+  display:none;
+  cursor:pointer;
+   } 
+  .bar1,.bar2,.bar3{
+    width:35px;
+    height:5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition:0.4s;
+  }
+  .change .bar1{
+    transform: translate(0,11px)rotate(-45deg);
+  }
+  .change .bar2{
+    opacity: 0;
+  }
+  .change .bar3{
+    transform:translate(0,-11px)rotate(46deg);
+  }
+    /* chat reponsive navigation bar */
+  .menu-links{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  /*  for diplay menu icon only if its screen shrinked shri  */
+  
+    /* chat reponsive navigation bar */
+    li {
+      margin: 0 10px;
+      }
+      a {
+      color: #fff;
+      text-decoration: none;
+      }
+      
+      
+        
+    /* Style for the navigation links */
+    nav ul {
+    list-style-type: none;
+    display: flex;
+    }
+    nav li {
+    margin-right: 10px;
+    }
+    nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    }
+    nav ul li:last-child{
+      margin-left: auto;
+    }
+    nav a:hover {
+    background-color:darkviolet;
+    color: #fff;
+    }
+    nav a.right {
+      background-color:var(--gold);
+      color: black;
+      padding: .5em;
+      border-radius: 0.50rem;
+      }
+      nav a.right:hover {
+        background-color:black;
+        color: #fff;
+        }
+   
+    
+
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    /* width: 200px; */
+    /* background-color:var(--gold); */
+    background: linear-gradient(to bottom,gold,var(--red),var(--orange));
+    position: relative;
+    /* height: 100%; */
+    overflow: auto;
+    font-weight: bold;
+
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 6px;
+    text-decoration: none;
+    font-size:20px;
+    text-align: left;
+border-bottom: 1px solid rgb(58, 48, 48);
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color:var(--red);
+    color: white;
+font-size: 1.3em;
+text-align: center;
+padding: .5em;
+margin: 0;
+width:100%;
+}
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color:var(--purple);
+    color:white;
+  }
+  
+
+
+/* Style the sidenav links and the dropdown button */
+.catitle {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  /* color: #818181; */
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over 
+.sidenav a:hover, .catitle:hover {
+  color: #f1f1f1;
+}
+ */
+
+/* Add an active class to the active dropdown button */
+
+.active {
+  background-color:var(--gold);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color:var(--purple);
+  color:white;
+text-align: center;
+padding: .5em;
+}
+.dropdown-container a h3{
+  color:white;
+}
+.dropdown-container a h3:hover,.dropdown-container a h3:focus,.dropdown-container a h3:active{
+  background-color:var(--gold);
+  color:black;
+}
+.dropdown-container a{
+  padding:0;
+}
+/* Optional: Style the caret down icon 
+.fa-caret-down {
+  float: right;
+  padding-right: 28px;
+}
+ */
+.content{
+  max-width:100vh;
+  max-height: fit-content;
+}
+
+
+ /* CSS for Footer */
+ footer{
+  background-color: black;
+color:white;
+padding: 30px;
+text-align: center;
+}
+i{
+  margin:5px;
+}
+.socialmedia a i{
+width:50px;
+height: 30px;
+}
+
+
+
+
+/* sidebar */
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      /* height: auto; */
+      position: relative;
+      background: linear-gradient(gold,rgb(246, 230, 138))
+    }
+    .sidebar a {float: none;}
+    div.content {margin-left: 0;max-width:100vw;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      /* text-align: center; */
+      float: none;
+      padding-left: 2em;
+    }
+  }
+
+
+
+
+/* for Navigation menu */
+  @media screen and (max-width: 768px) {
+    .menu-icon{
+      display:flex;
+    }
+    .menu-icon .icon {
+  display: block;
+}
+.menu{
+margin-left: .5em;
+align-self: center;
+font-weight: bold;
+font-size: 1.5em;
+}
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 0;
+    }
+    li {
+    margin: 10px 0;
+    }
+    .show-menu {
+    display: block;
+    }
+    }
+
+/* for all*/
+@media(min-width:768px){
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+*{
+  margin:0;
+}
+  .logo{
+font-size: 2em;
+  }
+  .hright h1{
+    display: inline;
+    padding-left: 4em;
+  }
+  .hright a{
+    justify-content: center;
+  }
+  #logout{
+    padding:.5em 1em;
+    font-size: 1.5em;
+  }
+  main{
+    max-width:100vw;
+    height:fit-content;
+    display:flex;
+  }
+ .sidebar{
+  width:15vw;
+ }
+  .sidebar a{
+    margin: 0;
+    text-align: center;
+  }
+ 
+  .main-content{
+    width:85vw;
+    /* height: 1000px; */
+  flex:8;
+  }
+}
+
+@media(min-width:2001px){
+  .logo{
+    font-size: 4em;
+      }
+      .logo img{
+        width:1.5em;
+      }
+      .hright h1{
+        font-size: 4em;
+        padding-left: 4em;
+      }
+      #logout{
+        padding:.5em 1em;
+        font-size: 2.5em;
+      }
+      nav{
+        font-size: 2em;
+      }
+      main{
+        max-width:100vw;
+        height:fit-content;
+        display:flex;
+      }
+     .sidebar{
+      width:15vw;
+font-size: 2em;
+    }
+      .sidebar a{
+        margin: 0;
+        text-align: center;
+        font-size: 1.3em;
+      }
+     
+      .main-content{
+        width:85vw;
+        /* height: 1000px; */
+      flex:8;
+      }
+      footer{
+        font-size: 1.7em;
+      }
+      .socialmedia a{
+        margin-right: 1.5em; 
+      }
+      #copyright{
+        margin-top: 1em;
+      }
+    }
+     

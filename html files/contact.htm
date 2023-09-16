@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: fit-content;
+}
+.layout{
+  /* background:linear-gradient(to right,purple,gold); */
+  background-color: purple;
+  width:100vw;
+  min-height:100vh;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 35%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+#title{margin-bottom:1em;font-size: 1.5em;background-color:purple;color: aliceblue;padding:.2em;}
+.contact{
+  display: flex;
+  flex-direction: column;
+/* align-items: center; */
+  width:50vw;
+  
+  background-color: gold;
+margin: auto;
+font-size: 1.2em;
+font-weight: bold;
+padding:1em;
+border-radius: .5em;
+}
+.contact a{
+  text-decoration: none;
+  display: block;
+  margin-top:1em;
+}
+i{
+  margin-right: .3em;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+p{margin-bottom:1em;}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .column{
+    width: 100%;
+    margin-top: 0;
+  }
+  .contact{
+    width:70vw;
+  }
+}
+h1,h2{
+  text-align: center;
+  font-weight: bold;
+  background-color:yellow;
+}
+</style>
+</head>
+<body>
+<div class="layout">
+<h1>Contact Section</h1>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Feel free To Contact Me</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="logo">
+      <img src="https://harish141103.github.io/Quotesite/favicon/android-chrome-192x192.png" style="width:50%">
+    </div>
+    </div>
+    <div class="column">
+    <div class="contact">
+      <p id="title">Contact Details</p>
+      <p>Name : Harish M</p>  
+      <p><i class="fa-solid fa-phone"></i>Mobile No. : +91 6383008505</p>
+    <a href="https://www.linkedin.com/in/harishmurugan1411/" target="_blank"><i class="fa-brands fa-linkedin fa-fade fa-2xl" style="color: #3d7ef0;"></i> LinkedIn</a>
+    <a href="mailto:harishmurugan1411@gmail.com" target="_blank"> <i class="fa-solid fa-envelope fa-fade fa-2xl"></i>Gmail</a>
+    <a href="https://github.com/Harish141103" target="_blank"><i class="fa-brands fa-github fa-fade fa-2xl"></i>GitHub</a>
+  </div>  
+  </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
+

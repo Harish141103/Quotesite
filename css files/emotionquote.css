@@ -1,0 +1,134 @@
+body {
+    /* background-color: lightblue; */
+    background-color: gold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+  }
+  
+  h1 {background-color:red;
+    color:white;
+    /* text-shadow: 2px 2px black; */
+  }
+  .description h1 {
+    background-color:lime;
+    color:black;
+    border-radius: 10%;
+    /* text-shadow: 2px 2px black; */
+  }
+.quote{text-align: justify;}
+  /* .quote { 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px lightblue;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 60%;
+    font-size: 15pt;
+ } */
+  .header {
+display: flex;
+background-color: #f0f0f0;
+padding: 5px;
+}
+.profile {
+display: flex;
+flex-direction: column;
+align-items: center;
+flex-wrap: wrap;
+background-color:darkviolet;
+
+}
+figcaption{
+background-color: gold;
+color:black;
+border-radius: 10%;
+font-weight: bold;
+font-size: 22px;
+}
+.profile img {
+width: 250px;
+height: 250px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 20px;
+
+margin: 0px auto;}
+
+.description {
+padding-left: 50px;
+flex-wrap: wrap;
+background-color:white;
+color:black;
+font-weight: bold;
+font-size: 22px;
+
+flex:1;
+}
+.description h1 {
+font-size: 32px;
+margin-top: 0;
+}
+.description p {
+font-size: 18px;
+line-height: 1.5;
+margin-top: 20px;
+text-align: justify;
+}
+@media (max-width:768px){
+  .header{
+    flex-direction: column;
+  }
+  .profile{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  }
+
+
+
+/* quote content  */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    }
+    .quote-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 40px;
+    max-width: 400px;
+    text-align: center;
+    }
+    .emotion {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+    .quote {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+    }
+    .author {
+    font-size: 16px;
+    font-weight: bold;
+    }
+    /* Animation */
+    .quote-card {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease-in-out;
+    }
+    .quote-card.show {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    
+    

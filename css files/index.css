@@ -1,0 +1,176 @@
+body{
+    margin:0;
+}
+.layout{
+max-width:100vw;
+
+}
+
+  /* CSS for Header */
+  .header{
+    display: flex;
+background-color:#333;
+max-width:100vw;
+max-height:20vh;    
+font-size: 1.5em;
+}
+  .logo{
+    width:80vw;
+height:100%;
+    background-color: #333;
+    color: #fff;  
+   display:flex;
+   justify-content: center;
+   align-items: center;
+margin:auto;
+}
+.site-icon{
+    margin-right: .4em;
+}
+ /* CSS for Main Section */
+ main{
+    max-width: 100vw;
+background: linear-gradient(to top,gold,purple);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container1 img{
+    margin-top: 1em;
+    max-width:80vw;
+}
+.container2 p{
+    margin:1em;
+    text-align: justify;
+    font-weight: bold;
+font-size: 1.2em;
+}
+.form-cont{
+    background-color: gold;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(227, 204, 78);
+width:80vw;
+height:40vh;
+justify-content: center;
+align-items: center;
+margin: auto;
+margin-bottom: 1em;
+}
+form h3{
+    font-size: 1.5em;
+    background-color: rgb(25, 24, 24);
+    color: gold;
+    width:100%;
+    text-align: center;
+    padding:.5em 0em;
+}
+form label{
+    margin-bottom: .5em;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+form #name{
+    margin-bottom: 1em;
+    border-radius: .3em;
+    height: 1em;
+    width:80%;
+    border: none;
+    padding:.5em;
+    font-weight: bold;
+}
+form #name:focus{
+    border:10px solid gold;
+}
+ .submit{
+    padding:.4em .8em;
+    border:none;
+    background-color:#0069d9;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    font-size: 1em;
+margin-bottom: 1em; 
+}
+    .submit:hover {
+    background-color:red;
+    }
+    /* CSS for Footer */
+    footer{
+        background-color: black;
+    color:white;
+    padding: 30px;
+    text-align: center;
+    }
+    i{
+        margin:5px;
+    }
+    .socialmedia a i{
+    width:50px;
+    height: 30px;
+    }
+    
+    /* typewrighting  */
+    #typewriter {
+    overflow: hidden;
+    white-space:nowrap;
+    font-size: 1.5em;
+    /* font-family:Montserrat; */
+    font-weight: bolder;
+    border-right: .15em solid orange;
+    animation: typewriter 2s steps(22) 1s 1 normal both;
+    background-color:gold;
+    margin-left:.5em;
+    padding:.3em;
+    } 
+    @keyframes typewriter {
+    from {width: 0;}
+    to {width: 85vw;}
+     }
+
+     @media(min-width:500px){
+        
+        
+         /* CSS for Main Section */
+         main{
+            min-height: 80vh;
+        }
+        .container{
+            flex-direction: row;
+        }
+.container1{
+    max-width: 50vw;
+}
+.container2{
+    max-width: 50vw;
+    padding:1em;
+}
+        .container1 img{
+            max-width:40vw;
+        }
+        
+        form{
+        width:40vw;
+        }
+         
+            #typewriter {
+            font-size: 1.2em;
+            } 
+            @keyframes typewriter {
+            from {width: 0;}
+            to {width: 45vw;}
+             }
+     }
+    @media(min-width:1500px){
+        *{
+            font-size: 1.13em;
+        }
+        .header{font-size: 1.8em;}
+        .site-icon{width:1.5em;}
+     #typewriter{font-size: 1.5em;     }   
+    }

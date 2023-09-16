@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+     background-image:url('/img/back.jpeg'); 
+    /* background-color:lime;     */
+    /* background: rgb(246,223,8); */
+    /* background: linear-gradient(97deg, rgba(246,223,8,1) 41%, rgba(52,0,242,1) 83%); */
+
+}
+    header{
+        max-width:100vw;
+        max-height: 15vh;
+        /* background-color: ; */
+        background: rgb(246,223,8);
+        background: linear-gradient(-90deg, rgba(246,223,8,1) 0%, rgba(242,0,229,1) 100%);
+    }
+    h1{
+        margin:0;
+text-align: center;
+padding:1em;
+    }
+    main{
+        max-width: 100vw;
+min-height: 80vh;
+        display:flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .container{
+        margin-top:8em;
+    }
+/* .container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    } */
+
+
+    .parent {
+    position: relative;
+     width: 100%; 
+     max-width: 600px; 
+    }
+    .circle {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background-color:blue;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+flex-direction: column;    
+}
+.circle img{margin:1em;}
+    * {
+    box-sizing: border-box;
+    }
+
+    .image-holder {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*animation: rotate linear 5s infinite forwards;*/
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    }
+    /* .image-holder:hover { 
+    animation-play-state: paused;
+    /* } */
+    .image-holder img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    }
+    .image-holder img:nth-child(1) {
+    top: -39px;
+    left: -15px;
+    }
+    .image-holder img:nth-child(3) {
+    top: -39px;
+    right: -15px;
+    }
+    .image-holder img:nth-child(5) {
+    bottom: -39px;
+    right: -15px;
+    }
+    .image-holder img:nth-child(7) {
+    bottom: -39px;
+    left: -15px;
+    }
+    .image-holder img:nth-child(2) {
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    .image-holder img:nth-child(4) {
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+    }
+    .image-holder img:nth-child(6) {
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    .image-holder img:nth-child(8) {
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    }
+    @keyframes rotate {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+    }
+    
+
+    
+    /* daily new quote generator */
+    #quote-container {
+    font-size: 1.5em;
+    color:black;
+    text-align: center;
+    margin-top: 0px;
+    background-color:gold;
+    border-radius: 10%;
+    font-weight: bold;
+    font-family:sans-serif ;
+    /* width:280px; */
+    }
+    #currentDates{
+        font-size: 1.5em;
+        color:white;
+        text-align: center;
+    margin-top: 0px;
+    background-color:red;
+    border-radius: 0%;
+    font-weight: bold;
+    font-family:sans-serif ;
+    }
+    .box{
+        border:1px solid black;
+        padding:10px;
+        text-align: center;
+        width: 300px;
+        height: 250px;
+        margin:0 auto;
+        background-color: aliceblue;
+        border-radius: 3%;
+    }
+    .box-name{
+        margin:0;
+        margin-top: .4em;
+        padding:.3em;
+        font-size: 1.2em;
+        font-weight: bold;
+        color:black;
+        background-color: gold;
+width:200px;
+display:flex;
+justify-content: center;
+border-radius: .3em;
+}
+.box-name p{margin:0}
+
+@media(max-width:650px){
+    h1{font-size: 1.5em;}
+    .circle{
+        width:250px;
+        height:250px;
+    }
+    .circle img{margin:.5em;width:30px;}
+    .box{
+        width:200px;
+        height:150px;
+    }
+    #currentDates{
+        font-size: .8em;
+    }
+    #quote-container {
+        font-size: 1em;
+        color:black;
+        text-align: center;
+        margin-top: 0px;
+        background-color:gold;
+        border-radius: .2em;
+        }
+    .image-holder img{
+        width:33px;
+        height:33px;
+    }
+    .image-holder img:nth-child(1) {
+        top: 10px;
+        left:5px;
+        }
+        .image-holder img:nth-child(3) {
+        top: 10px;
+        right: 7px;
+        }
+        .image-holder img:nth-child(5) {
+        bottom: 10px;
+        right: 7px;
+        }
+        .image-holder img:nth-child(7) {
+        bottom: 10px;
+        left: 5px;
+        }
+        .image-holder img:nth-child(2) {
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+        .image-holder img:nth-child(4) {
+        top: 50%;
+        right: -32px;
+        transform: translateY(-50%);
+        }
+        .image-holder img:nth-child(6) {
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+        .image-holder img:nth-child(8) {
+        top: 50%;
+        left: -32px;
+        transform: translateY(-50%);
+        }
+        .box-name{
+            margin:0;
+            margin-top: .1em;
+            padding:.1em;
+            font-size: 1em;
+    width:140px;
+    flex-wrap: wrap;
+    justify-content: center;
+    }       
+}
+
