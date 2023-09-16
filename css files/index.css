@@ -1,4 +1,10 @@
+/* @font-face{
+    src: url('https://harish141103.github.io/Quotesite/font/FS_Me/FS\ Me-Regular.otf Me-Regular.otf');
+ font-family: fs;
+}
+/*  */
 body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin:0;
 }
 .layout{

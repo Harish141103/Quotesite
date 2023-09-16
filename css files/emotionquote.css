@@ -1,7 +1,10 @@
 body {
     /* background-color: lightblue; */
     background-color: gold;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif;
+     */
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     text-align: center;
     
   }
