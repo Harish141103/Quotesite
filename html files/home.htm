@@ -24,7 +24,7 @@
         <div class="header">        
             <div class="logo">
                 <img class="site-icon" src="https://harish141103.github.io/Quotesite/favicon/favicon.ico" alt="site-icon">   
-                            <p>HappyHope Quotesite</p>
+                            <p >HappyHope Quotesite</p>
             </div>           
             <div class="hright">
                 
@@ -41,7 +41,7 @@
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-<p class="menu">MENU</p>        
+<p class="menu" >MENU</p>        
       </div>
       <ul class="menu-links" id="scroll-button">
     <li><a  href="#main-content"  class="home" ><h2>HOME</h2></a></li>
@@ -57,11 +57,11 @@
     <!-- The sidebar -->
 <div class="sidebar" >
     
-  <a id="scroll-button"class="active" href="https://harish141103.github.io/Quotesite/html files/categories.htm" target="main_content">Categories</a>
+  <p id="scroll-button"><a  class="active" href="https://harish141103.github.io/Quotesite/html files/categories.htm" target="main_content" >Categories</a></p>
     
-    <a id="scroll-button"class="catitle" href="https://harish141103.github.io/Quotesite/html files/peoplec.htm" target="main_content">People Quotes<i class="fa fa-caret-down"></i></a>
+    <a  class="catitle" href="https://harish141103.github.io/Quotesite/html files/peoplec.htm" target="main_content">People Quotes<i class="fa fa-caret-down"></i></a>
     
-    <div id="scroll-button" class="dropdown-container">
+    <div  class="dropdown-container">
         <a href="https://harish141103.github.io/Quotesite/peoples/astronauts/astronauts.htm" target="main_content"><h3>Astronauts</h3></a>
         <a href="https://harish141103.github.io/Quotesite/peoples/athletes/athletes.htm" target="main_content"><h3>Athletes</h3></a>
         <a href=" https://harish141103.github.io/Quotesite/peoples/businessmen/businessmen.htm" target="main_content"><h3>Businessmen</h3></a>
@@ -74,8 +74,8 @@
             <a href="https://harish141103.github.io/Quotesite/peoples/statesman/statesman.htm" target="main_content"><h3>Statesman</h3></a>
     </div>
     
-    <a class="catitle" id="scroll-button" href="https://harish141103.github.io/Quotesite/html files/picturequotes.htm" target="main_content">Picture Quotes<i class="fa fa-caret-down"></i></a>
-    <div id="scroll-button" class="dropdown-container">
+    <a class="catitle"  href="https://harish141103.github.io/Quotesite/html files/picturequotes.htm" target="main_content">Picture Quotes<i class="fa fa-caret-down"></i></a>
+    <div  class="dropdown-container">
         
         <a href="https://harish141103.github.io/Quotesite/html files/tampicturequotes.htm" target="main_content"><h3>Tamil Pictures</h3></a>
             <a href="https://harish141103.github.io/Quotesite/html files/engpicturequotes.htm" target="main_content"><h3>English Pictures</h3></a>
@@ -83,8 +83,8 @@
 
 
 
-    <a id="scroll-button" class="catitle" href="https://harish141103.github.io/Quotesite/html files/spinemotion.htm" target="main_content">Emotion Quotes<i class="fa fa-caret-down"></i></a>
-    <div id="scroll-button" class="dropdown-container">
+    <a  class="catitle" href="https://harish141103.github.io/Quotesite/html files/spinemotion.htm" target="main_content">Emotion Quotes<i class="fa fa-caret-down"></i></a>
+    <div  class="dropdown-container">
     <a href="https://harish141103.github.io/Quotesite/emotions/happiness.htm" target="main_content"><h3>Happiness</h3></a>
         <a href="https://harish141103.github.io/Quotesite/emotions/love.htm" target="main_content"><h3>Love</h3></a>
         <a href="https://harish141103.github.io/Quotesite/emotions/fear.htm" target="main_content"><h3>Fear</h3></a>
@@ -97,9 +97,9 @@
         <a href="https://harish141103.github.io/Quotesite/emotions/shame.htm" target="main_content"><h3>Shame</h3></a>
     </div>
 
-    <a target="main_content" id="scroll-button" href="https://harish141103.github.io/Quotesite/html files/randomquote.htm">Random Quotes</a>
+    <a target="main_content"  href="https://harish141103.github.io/Quotesite/html files/randomquote.htm">Random Quotes</a>
     
-    <a target="main_content" id="scroll-button" href="https://harish141103.github.io/Quotesite/html files/userquote.htm">User Quotes</a>
+    <a target="main_content"  href="https://harish141103.github.io/Quotesite/html files/userquote.htm">User Quotes</a>
 
 </div>
 
@@ -126,8 +126,39 @@
                        </div>
             <div id="copyright">&#169 CopyRight HappyHope</div>
             </footer>
-                        
+        
+        
+        
+        <!-- for smooth scrolling whe sidebar link clicked sucess1-->
+        <script>   
+const links = document.querySelectorAll(".sidebar a");
+links.forEach(function (link) {
+  link.addEventListener("click", function (event) {
+    
+    const targetElement = document.getElementById("scroll-to-me");
+    const targetOffset = targetElement.offsetTop;
+    const scrollOptions = {
+      top: targetOffset,
+      behavior: "smooth",
+    };
+    window.scrollTo(scrollOptions);
+  });
+});
 
+</script>
+<!-- 
+    //for scrolling when sidebar link clicked success1
+  // Add click event listeners to the sidebar links
+  const links = document.querySelectorAll(".sidebar a");
+  links.forEach(function (link) {
+      link.addEventListener("click", function () {
+          setTimeout(function () {
+              window.scrollTo(0, document.getElementById("scroll-to-me").offsetTop);
+          }, 100);
+          
+      });
+  });
+   -->
 
 
             
