@@ -16,7 +16,7 @@ body {
   .description h1 {
     background-color:lime;
     color:black;
-    border-radius: 10%;
+    border-radius: 0.5rem;
     /* text-shadow: 2px 2px black; */
   }
 .quote{text-align: justify;}
@@ -39,6 +39,7 @@ padding: 5px;
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
 flex-wrap: wrap;
 background-color:darkviolet;
 
@@ -56,17 +57,15 @@ height: 250px;
 border-radius: 50%;
 object-fit: cover;
 margin-bottom: 20px;
-
-margin: 0px auto;}
+}
 
 .description {
-padding-left: 50px;
+padding:1em;
 flex-wrap: wrap;
 background-color:white;
 color:black;
 font-weight: bold;
 font-size: 22px;
-
 flex:1;
 }
 .description h1 {
@@ -89,9 +88,6 @@ text-align: justify;
   }
 
   }
-
-
-
 /* quote content  */
 .container {
     display: flex;

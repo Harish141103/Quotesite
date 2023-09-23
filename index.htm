@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://harish141103.github.io/Quotesite/css files/index.css">
+    <link rel="stylesheet" href="/css files/index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="https://harish141103.github.io/Quotesite/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://harish141103.github.io/Quotesite/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://harish141103.github.io/Quotesite/favicon/favicon-16x16.png">
     <link rel="manifest" href="https://harish141103.github.io/Quotesite/favicon/site.webmanifest">
     <title>HappyHope</title>
+    <style>
+
+
+    </style>
 </head>
 <body>
 <div class="layout">
@@ -35,9 +39,15 @@
                 
             <form action="https://harish141103.github.io/Quotesite/html files/home.htm" method="GET">
                 <h3>To View Our Quotes</h3>
-                <label for="name" class="uname">Enter your name:</label>
-                <input type="text" id="name" name="user_name" required>
-                <input class="submit" type="submit" value="Get Started" class="submit">
+                <div class="enterun">
+                     <label for="name" class="uname">Enter Your Name:</label>
+                     <hr>
+                </div>
+                     <!--  Animated css gradient border - codepen   -->
+                 <div class="gradient-border" id="box" > 
+                    <input type="text" id="name" name="user_name" required>
+                </div>
+                    <input class="submit" type="submit" value="Get Started" class="submit">
             </form>
         </div>
         </div>
