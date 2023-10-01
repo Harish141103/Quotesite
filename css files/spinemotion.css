@@ -124,12 +124,20 @@
     font-weight: bold;
     font-size: 22px;
     cursor: pointer;
+    animation:expand .5s ease-in-out 0s  infinite alternate;
   }
   .spin:active{
-    width: 70px;
-    height: 70px;
     font-size: 20px;
   }
+   
+      @keyframes expand{
+      from {width: 75px;height:75px;font-size:22px;}
+      to {
+        background-color:red;
+        width: 85px;
+      height:85px;
+    font-size:25px;}
+       }
   
   /* .mainbox.animate:after{ 
     animation: animateArrow 0.7s ease infinite;
@@ -144,8 +152,10 @@
   font-size: 30px;
   font-weight: bold;
   color: #333;
-  display:block;
-  
+  /* display:block; */
+  display:flex;
+  flex-direction:column;
+  align-items: center;
   }
   .result {
   width: 400px;
@@ -172,12 +182,12 @@
   padding: 10px 20px;
   /* border-radius: 5px; */
   cursor: pointer;
-  margin-top: .5em;
+  /* margin-top: .5em; */
   padding: 10px 20px;
   border:none;
   background-color:#0069d9;
   color: #fff;
-  border-radius: 0.50rem;
+  /* border-radius: 0.50rem; */
   }
   #quote:hover{
     background-color:red;
@@ -202,7 +212,8 @@
 
 
   .gradient-border{
-    margin-bottom: 1em;
+
+    margin-top: .5em;
     height: 1em;
     width:80%;
   
@@ -212,6 +223,7 @@
     border: 4px solid;
     border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
     animation: 3s rotate linear infinite;
+    background-color:#0069d9;
 }
 
 @keyframes rotate {
@@ -264,7 +276,14 @@
       height: 50px;
       font-size: 15px;
     }
-
+    @keyframes expand{
+      from {width: 50px;height:50px;}
+      to {
+        background-color:red;
+        width: 60px;
+      height:60px;
+    font-size:18px;}
+       }
       .result {
       width: 200px;
    

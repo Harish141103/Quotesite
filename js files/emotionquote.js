@@ -108,7 +108,9 @@ function rotateFunction(){
   result.innerHTML = `
   <img id="image" src="${emotion.image}" />
   <h2 id="name"> ${username} ,Your Emotion is ${emotion.name}"</h2>
-  <button id="quote" onclick="window.location.href='${emotion.quoteUrl}'">View Quote</button>
+  <div class="gradient-border" id="box" > 
+  <button id="quote" onclick="window.location.href='${emotion.quoteUrl}'">View ${emotion.name} Quote</button>
+  </div>
   `;
   result.classList.add('show');
   spinBtn.disabled = false;
